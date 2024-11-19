@@ -1,0 +1,447 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 40702,
+	"name": "Snake",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Timeline",
+			"name": "Timeline controller",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "vignette",
+			"name": "Vignette",
+			"author": "Brad Larson",
+			"bundled": false
+		}
+	],
+	"uniqueId": "n4r2deabeyw",
+	"objectTypes": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Spr_Apple",
+					"Spr_InvisibleWall",
+					"Spr_SnakeTail",
+					"Spr_PowerUp",
+					"Spr_SnakeHead",
+					"Spr_SnakeJoint",
+					"Spr_SnakePart",
+					"Spr_SnakeTongue",
+					"Spr_Banner",
+					"Frog_Aggro",
+					"Frog_BG",
+					"Frog_Docile"
+				],
+				"subfolders": [],
+				"name": "Sprites"
+			},
+			{
+				"items": [
+					"BG_MainMenu",
+					"TM_Decor",
+					"TM_Ground",
+					"TM_Tree",
+					"Spr_FadeIn",
+					"Spr_FadeOut",
+					"Spr_Darken",
+					"Spr_FadeOut2",
+					"TM_Forest",
+					"TM_Forest2",
+					"AppleTree"
+				],
+				"subfolders": [],
+				"name": "Background"
+			},
+			{
+				"items": [
+					"Keyboard",
+					"Touch",
+					"LS_SnakeScore",
+					"Audio",
+					"TimelineController"
+				],
+				"subfolders": [],
+				"name": "Input"
+			},
+			{
+				"items": [
+					"Txt_CurrentScore",
+					"Txt_HighScore",
+					"Txt_FullScreen",
+					"Txt_PlusPoint"
+				],
+				"subfolders": [],
+				"name": "Text"
+			},
+			{
+				"items": [
+					"Spr_Joystick",
+					"Spr_JoystickBase",
+					"GUI_PlayBtn",
+					"GUI_ReturnBtn",
+					"Spr_Instruction",
+					"Spr_Play",
+					"BG_Title",
+					"GUI_RetryBtn",
+					"Board"
+				],
+				"subfolders": [],
+				"name": "GUI"
+			},
+			{
+				"items": [
+					"Sprite",
+					"Flashes",
+					"Plants",
+					"SpriteFont"
+				],
+				"subfolders": [],
+				"name": "New"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"MainMenu",
+			"Layout 1"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"eMainMenu",
+			"Event sheet 1"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "Fruit collect 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 940599072748395,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Big Egg collect 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 549593239115309,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Cancel 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 817777162129942,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Bubble heavy 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 800440278359217,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "NODOKA.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 487227450387286,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "SimpleBattleBGM.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 345670618794906,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Theme.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 344238870708710,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Home Town (mp3cut.net).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 535262982069138,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 537385294946947,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 280838799226397,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 553739669155551,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 663302150087981,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 762375589324534,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 178523640709814,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 493787327847671,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Appear",
+			"AppleFlip"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "portrait",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "progress",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 720,
+	"viewportHeight": 1280,
+	"firstLayout": "MainMenu"
+}
