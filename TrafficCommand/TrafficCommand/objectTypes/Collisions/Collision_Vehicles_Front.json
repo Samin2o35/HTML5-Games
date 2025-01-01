@@ -1,0 +1,110 @@
+{
+	"name": "Collision_Vehicles_Front",
+	"plugin-id": "Sprite",
+	"sid": 423504093279913,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 707793331798765
+		},
+		{
+			"name": "Spawn_Point_UID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 238024625209561
+		},
+		{
+			"name": "Road",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 395848523625301
+		},
+		{
+			"name": "Active",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 708149228299503
+		},
+		{
+			"name": "Reward",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 563940486488402
+		},
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 677007463604053
+		},
+		{
+			"name": "Max_Speed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 485769573288606
+		},
+		{
+			"name": "Acceleration",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 774017423140283
+		},
+		{
+			"name": "Decceleration",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 295877242154115
+		},
+		{
+			"name": "Life",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 870910113207139
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3003731,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 160113730674558,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

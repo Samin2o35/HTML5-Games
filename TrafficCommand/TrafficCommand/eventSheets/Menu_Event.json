@@ -1,0 +1,296 @@
+{
+	"name": "Menu_Event",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global_Event"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Shadow_Event"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Menu_Settings",
+			"description": "This event automatically arranges objects based on their size and screen size.",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 5448276190501162
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Game_Logo",
+							"sid": 7139777764973424,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "ViewportTop(Self.LayerName) + (Self.Height / 2) + Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Play",
+							"sid": 505499405266732,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Sun_Rays",
+							"sid": 6558663104763631,
+							"parameters": {
+								"object": "Button_Play",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Total_Score_Font",
+							"sid": 7455046996052281,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Exit",
+							"sid": 668706232621789,
+							"parameters": {
+								"x": "ViewportLeft(Self.LayerName) + (Self.Width_Size / 2) + Current_Distance",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Fullscreen",
+							"sid": 750165900047517,
+							"parameters": {
+								"x": "ViewportLeft(Self.LayerName) + (Self.Width_Size * 1.5) + (Current_Distance * 2)",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Music",
+							"sid": 235728857867581,
+							"parameters": {
+								"x": "ViewportRight(Self.LayerName) - (Self.Width_Size * 1.5) - (Current_Distance * 2)",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Sound",
+							"sid": 171758059933738,
+							"parameters": {
+								"x": "ViewportRight(Self.LayerName) - (Self.Width_Size / 2) - Current_Distance",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						}
+					],
+					"sid": 3155068656635587
+				}
+			],
+			"sid": 2023819072325885
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Button_Play",
+			"description": "This is the button to start the game.",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 1240686018398823,
+							"parameters": {
+								"object": "Button_Play",
+								"type": "start"
+							}
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Button_Play",
+							"sid": 5874262399956315,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						},
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 537510637303447,
+							"parameters": {
+								"group-name": "\"Shadow_In_Settings\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 6569990346333341,
+							"parameters": {
+								"group-name": "\"Shadow_Out_Settings\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 8067121377058575,
+							"parameters": {
+								"audio-file": "button_play",
+								"loop": "not-looping",
+								"volume": "Sound",
+								"stereo-pan": "0",
+								"tag-optional": "\"Sound\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Button_Play",
+							"sid": 8909145399137241,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 1772101068320499,
+							"parameters": {
+								"group-name": "\"Shadow_In_Settings\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 5633734151813964,
+							"parameters": {
+								"tag": "\"Shadow_In\""
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Global variable [b]Level[/b] in [b]Game_Event[/b] set to 1 so will always go to level 1 first"
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 1521007007854787,
+							"parameters": {
+								"layout": "\"Level_\" & Level"
+							}
+						}
+					],
+					"sid": 5306680690467987
+				}
+			],
+			"sid": 9304939006564166
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Button_Exit",
+			"description": "This is the button to exit the game.",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 2484939689815928,
+							"parameters": {
+								"object": "Button_Exit",
+								"type": "start"
+							}
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Button_Exit",
+							"sid": 940942446462188,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						},
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 735659827977050,
+							"parameters": {
+								"group-name": "\"Shadow_In_Settings\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 151854393976420,
+							"parameters": {
+								"group-name": "\"Shadow_Out_Settings\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "start-animation",
+							"objectClass": "Button_Exit",
+							"sid": 1534965602400769,
+							"parameters": {
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 752351836200111,
+							"parameters": {
+								"group-name": "\"Shadow_In_Settings\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 490986775110383,
+							"parameters": {
+								"tag": "\"Shadow_In\""
+							}
+						},
+						{
+							"id": "close",
+							"objectClass": "Browser",
+							"sid": 6402150123220357
+						}
+					],
+					"sid": 2268427827982242
+				}
+			],
+			"sid": 7688259538158753
+		}
+	],
+	"sid": 972668150296122
+}

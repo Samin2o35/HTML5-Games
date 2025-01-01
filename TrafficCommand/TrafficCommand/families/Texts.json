@@ -1,0 +1,20 @@
+{
+	"name": "Texts",
+	"plugin-id": "Sprite",
+	"sid": 4474884648438053,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 983919848292302
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Text_Paused",
+		"Text_Tap_To_Play",
+		"Text_Try_Again",
+		"Text_You_Won"
+	]
+}

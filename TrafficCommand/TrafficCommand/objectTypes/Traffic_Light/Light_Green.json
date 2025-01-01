@@ -1,0 +1,39 @@
+{
+	"name": "Light_Green",
+	"plugin-id": "Sprite",
+	"sid": 767348510075717,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 8,
+						"height": 11,
+						"originX": 0.5,
+						"originY": 0.545455,
+						"originalSource": "I:\\GAME DEVELOPMENT\\IN DEVELOPING\\067_TrafficMania\\Other\\Light_Green.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4865366,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 900149215865480,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

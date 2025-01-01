@@ -1,0 +1,53 @@
+{
+	"name": "Button_Menu",
+	"plugin-id": "Sprite",
+	"sid": 3299601170435198,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Будущие_игры\\052_FruitSlasher\\Textures\\Buttons\\BtnMenuOff.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6624827,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Будущие_игры\\052_FruitSlasher\\Textures\\Buttons\\BtnMenuOn.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7695336,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 3542393951694915,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

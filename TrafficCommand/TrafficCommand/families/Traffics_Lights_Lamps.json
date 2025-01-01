@@ -1,0 +1,26 @@
+{
+	"name": "Traffics_Lights_Lamps",
+	"plugin-id": "Sprite",
+	"sid": 175179816447395,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 194644234000834
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "exposure",
+			"name": "Exposure"
+		}
+	],
+	"members": [
+		"Light_Green",
+		"Light_Red",
+		"Light_Yellow"
+	]
+}

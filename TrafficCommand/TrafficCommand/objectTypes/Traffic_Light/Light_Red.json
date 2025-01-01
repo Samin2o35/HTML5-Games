@@ -1,0 +1,39 @@
+{
+	"name": "Light_Red",
+	"plugin-id": "Sprite",
+	"sid": 773231088711552,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 8,
+						"height": 11,
+						"originX": 0.5,
+						"originY": 0.545455,
+						"originalSource": "I:\\GAME DEVELOPMENT\\IN DEVELOPING\\067_TrafficMania\\Other\\Light_Red.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2500331,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 681015537383561,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

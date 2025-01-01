@@ -1,0 +1,39 @@
+{
+	"name": "Level_02_1",
+	"plugin-id": "Sprite",
+	"sid": 798682334696605,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2048,
+						"height": 1208,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "I:\\GAME DEVELOPMENT\\IN DEVELOPING\\067_TrafficMania\\Other\\Level_02_1.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6012182,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 157375367585457,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"name": "Button_Fullscreen",
+	"plugin-id": "Sprite",
+	"sid": 5993151613532956,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Графические комплекты\\Игровой дизайн-24!!!\\ai\\BtnFullscreenOff.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8189026,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 367679,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 497245855563842,
+				"name": "Fullscreen",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

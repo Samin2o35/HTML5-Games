@@ -1,0 +1,22 @@
+{
+	"name": "Orientation_Font",
+	"plugin-id": "Spritefont2",
+	"sid": 515375617191045,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1024,
+		"height": 512,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "H:\\ИГРОСТРОЙ\\Будущие_игры\\046_BrickOut\\Fonts-Vector_v5_07.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 6748068,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

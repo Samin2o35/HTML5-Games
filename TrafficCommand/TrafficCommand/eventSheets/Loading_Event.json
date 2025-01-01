@@ -1,0 +1,497 @@
+{
+	"name": "Loading_Event",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global_Event"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Shadow_Event"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Loading_Settings",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 4940956531340237
+						}
+					],
+					"actions": [
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 6076311620281508,
+							"parameters": {
+								"audio-file": "brake"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 681171437862788,
+							"parameters": {
+								"audio-file": "button"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 9751462021864048,
+							"parameters": {
+								"audio-file": "button_play"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 9551415323953040,
+							"parameters": {
+								"audio-file": "car_acceleration_1"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 707996354477128,
+							"parameters": {
+								"audio-file": "car_acceleration_2"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 851967617316083,
+							"parameters": {
+								"audio-file": "car_acceleration_3"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 569153344681464,
+							"parameters": {
+								"audio-file": "car_acceleration_4"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 487307322857076,
+							"parameters": {
+								"audio-file": "car_crash_1"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 795328467185274,
+							"parameters": {
+								"audio-file": "car_crash_2"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 196432801662382,
+							"parameters": {
+								"audio-file": "car_crash_3"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 570649224117836,
+							"parameters": {
+								"audio-file": "car_horn_1"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 260959579082718,
+							"parameters": {
+								"audio-file": "car_horn_2"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 555555340756351,
+							"parameters": {
+								"audio-file": "car_horn_3"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 470240835154914,
+							"parameters": {
+								"audio-file": "car_spawn_1"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 831029303796031,
+							"parameters": {
+								"audio-file": "car_spawn_2"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 740926049594901,
+							"parameters": {
+								"audio-file": "car_spawn_3"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 235945855496355,
+							"parameters": {
+								"audio-file": "car_spawn_4"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 152991405821001,
+							"parameters": {
+								"audio-file": "game_music"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 338338615027918,
+							"parameters": {
+								"audio-file": "game_over"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 517219354757925,
+							"parameters": {
+								"audio-file": "level_completed"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 929808606992007,
+							"parameters": {
+								"audio-file": "money"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 402964287357262,
+							"parameters": {
+								"audio-file": "pause"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 307121274681535,
+							"parameters": {
+								"audio-file": "tap_to_play"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 566890649540547,
+							"parameters": {
+								"audio-file": "timer_beep"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 210794862781451,
+							"parameters": {
+								"audio-file": "traffic_light"
+							}
+						}
+					],
+					"sid": 3558672448702921
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 7288955500379076
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sun_Rays",
+							"sid": 843551720719860,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "(ViewportTop(Self.LayerName) + ViewportBottom(Self.LayerName) ) / 2 - 40"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Game_Icon",
+							"sid": 1199509555822167,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "(ViewportTop(Self.LayerName) + ViewportBottom(Self.LayerName) ) / 2 - 40"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Loading_Font",
+							"sid": 333218446883147,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "(ViewportTop(Self.LayerName) + ViewportBottom(Self.LayerName) ) / 2 + 200"
+							}
+						}
+					],
+					"sid": 5702796331133168
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 8232997178520474,
+							"parameters": {
+								"group-name": "\"Button_Start\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Button_Start",
+							"sid": 149163920568143,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "ViewportBottom(Self.LayerName) + (Self.Height_Size + Current_Distance)"
+							}
+						}
+					],
+					"sid": 2273302247134115
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 4436434434848833,
+							"parameters": {
+								"first-value": "round(loadingprogress*100)",
+								"comparison": 3,
+								"second-value": "99"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Loading_Font",
+							"sid": 2795397940398951,
+							"parameters": {
+								"instance-variable": "Active"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Loading_Font",
+							"sid": 869868461525011,
+							"parameters": {
+								"text": "\"Loading-\" & round(loadingprogress*100) & \"%\""
+							}
+						}
+					],
+					"sid": 792751487558356
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-loader-layout-complete",
+							"objectClass": "System",
+							"sid": 2211051541038558
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Loading_Font",
+							"sid": 5866400687572356,
+							"parameters": {
+								"instance-variable": "Active",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Loading_Font",
+							"sid": 8318923374095976,
+							"parameters": {
+								"text": "\"Loading-100%\""
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 8000724956091685,
+							"parameters": {
+								"group-name": "\"Button_Start\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 5959461069035536
+				}
+			],
+			"sid": 3474809452368921
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Button_Start",
+			"description": "This is the button to go to the main menu of the game.",
+			"isActiveOnStart": false,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 2927911019786157
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Button_Start",
+							"sid": 169042985358513,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size + Current_Distance)"
+							}
+						}
+					],
+					"sid": 274364638422926
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 170638673326114,
+							"parameters": {
+								"object": "Button_Start",
+								"type": "start"
+							}
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Button_Start",
+							"sid": 3791486798952237,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						},
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 101736051496517,
+							"parameters": {
+								"group-name": "\"Shadow_In_Settings\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 3282146084330431,
+							"parameters": {
+								"group-name": "\"Shadow_Out_Settings\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 9559401390123688,
+							"parameters": {
+								"audio-file": "game_music",
+								"loop": "looping",
+								"volume": "Music",
+								"stereo-pan": "0",
+								"tag-optional": "\"Music\""
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "Button_Start",
+							"sid": 2480028511740382,
+							"parameters": {
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 2449118660487251,
+							"parameters": {
+								"group-name": "\"Shadow_In_Settings\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 5123616059582926,
+							"parameters": {
+								"tag": "\"Shadow_In\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 1053695613437158,
+							"parameters": {
+								"layout": "Menu"
+							}
+						}
+					],
+					"sid": 2520824816048618
+				}
+			],
+			"sid": 6567827093262695
+		}
+	],
+	"sid": 537662172735692
+}

@@ -1,0 +1,22 @@
+{
+	"name": "Text_Big_Font",
+	"plugin-id": "Spritefont2",
+	"sid": 288762970270578,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 2048,
+		"height": 1024,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "I:\\GAME DEVELOPMENT\\IN DEVELOPING\\067_TrafficMania\\Other\\Font_Denk One.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 6053767,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

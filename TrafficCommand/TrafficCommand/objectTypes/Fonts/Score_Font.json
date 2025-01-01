@@ -1,0 +1,22 @@
+{
+	"name": "Score_Font",
+	"plugin-id": "Spritefont2",
+	"sid": 2228849329748515,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1024,
+		"height": 512,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "I:\\GAME DEVELOPMENT\\IN DEVELOPING\\067_TrafficMania\\Other\\Font_Intro-Black.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 4330080,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

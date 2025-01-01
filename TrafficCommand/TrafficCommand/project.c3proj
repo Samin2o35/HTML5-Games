@@ -1,0 +1,678 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 41602,
+	"name": "Traffic Command",
+	"runtime": "c3",
+	"useWorker": "dom",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "brightness",
+			"name": "Brightness",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "exposure",
+			"name": "Exposure",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "9p1wdoktm456",
+	"objectTypes": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Sun_Rays",
+					"Frame_Cars",
+					"Frame_Lives",
+					"Frame_Score",
+					"Frame_Time",
+					"Window",
+					"Window_Sign"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"Cursor_Pressed",
+							"Cursor"
+						],
+						"subfolders": [],
+						"name": "Mouse"
+					}
+				],
+				"name": "Gui"
+			},
+			{
+				"items": [
+					"Background",
+					"Level_02_1",
+					"Level_02_Bottom",
+					"Level_02_Right",
+					"Level_04_1",
+					"Level_04_2",
+					"Level_04_3",
+					"Level_04_4",
+					"Level_05_1",
+					"Level_05_2",
+					"Level_05_3",
+					"Level_01",
+					"Level_03_1",
+					"Level_03_2",
+					"Level_03_3",
+					"Level_01_Bottom",
+					"Level_01_Left",
+					"Level_01_Right",
+					"Level_01_Top",
+					"Level_07_1",
+					"Level_07_2",
+					"Level_07_3",
+					"Level_07_4",
+					"Level_07_5",
+					"Level_08_1",
+					"Level_08_2",
+					"Level_08_3",
+					"Level_08_4",
+					"Level_08_5"
+				],
+				"subfolders": [],
+				"name": "Background"
+			},
+			{
+				"items": [
+					"Audio",
+					"Browser",
+					"Keyboard",
+					"Mouse",
+					"Touch",
+					"Dictionary_Vehicles",
+					"LocalStorage"
+				],
+				"subfolders": [],
+				"name": "Plugins"
+			},
+			{
+				"items": [
+					"Explosion",
+					"Fire"
+				],
+				"subfolders": [],
+				"name": "Effects"
+			},
+			{
+				"items": [
+					"Lives_Font",
+					"Total_Score_Font",
+					"Score_Font",
+					"Time_Font",
+					"Loading_Font",
+					"Game_Score_Font",
+					"Orientation_Font",
+					"Cars_Font",
+					"Text_Font",
+					"Text_Big_Font",
+					"Text_Score_Font"
+				],
+				"subfolders": [],
+				"name": "Fonts"
+			},
+			{
+				"items": [
+					"Button_Exit",
+					"Button_Fullscreen",
+					"Button_Play",
+					"Button_Menu",
+					"Button_Music",
+					"Button_Pause",
+					"Button_Reload",
+					"Button_Return",
+					"Button_Sound",
+					"Button_Start",
+					"Button_Go",
+					"Button_Restart",
+					"Button_Traffic_Light"
+				],
+				"subfolders": [],
+				"name": "Buttons"
+			},
+			{
+				"items": [
+					"Game_Icon",
+					"Game_Logo",
+					"Black_Screen"
+				],
+				"subfolders": [],
+				"name": "Other"
+			},
+			{
+				"items": [
+					"Text_Paused",
+					"Text_Tap_To_Play",
+					"Text_Try_Again",
+					"Text_You_Won"
+				],
+				"subfolders": [],
+				"name": "Texts"
+			},
+			{
+				"items": [
+					"Collision_Vehicles_Back",
+					"Collision_Vehicles_Front",
+					"Spawn_Point_Rewarded",
+					"Stop_Line",
+					"Collision_Vehicles_Crash",
+					"Spawn_Point"
+				],
+				"subfolders": [],
+				"name": "Collisions"
+			},
+			{
+				"items": [
+					"Vehicles",
+					"Warning",
+					"Brake_Lights",
+					"Headlights",
+					"Money"
+				],
+				"subfolders": [],
+				"name": "Car"
+			},
+			{
+				"items": [
+					"Light_Green",
+					"Traffic_Light",
+					"Light_Yellow",
+					"Light_Red",
+					"Light_Glow",
+					"Light_Glow_Road",
+					"Arrow"
+				],
+				"subfolders": [],
+				"name": "Traffic_Light"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Buttons",
+			"Texts",
+			"Traffics_Lights_Lamps"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Loading",
+			"Menu",
+			"Level_1",
+			"Level_2",
+			"Level_3",
+			"Level_4",
+			"Level_5",
+			"Level_6",
+			"Level_7",
+			"Level_8",
+			"Game_Over",
+			"Game_Complete",
+			"Resources"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Game_Event",
+			"Loading_Event",
+			"Global_Event",
+			"Shadow_Event",
+			"Menu_Event",
+			"Game_Complete_Event",
+			"Game_Over_Event"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "brake.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 440242597451516,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "button.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 762542373722829,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "button_play.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 868363598003100,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_acceleration_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 130989002606904,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_acceleration_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 502001315935188,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_acceleration_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 588299961074146,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_acceleration_4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 851625546251336,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_crash_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 992751792653571,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_crash_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 982032342309909,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_crash_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 122581693469126,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_horn_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 722300909978051,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_horn_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 770988986530977,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_horn_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 141547166374158,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_spawn_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 241714120485314,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_spawn_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 287010839247282,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_spawn_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 471550330303090,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "car_spawn_4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 164333069790616,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "game_over.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 348965645270874,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "level_completed.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 762725727689950,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "money.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 349808666953707,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pause.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 607860520971748,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "tap_to_play.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 848462347079465,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "timer_beep.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 283630630277911,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "traffic_light.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 243229439288646,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "game_music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 987130383959404,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 222785512510739,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 595382280605121,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-114.png",
+					"type": "image/png",
+					"sid": 264615456404276,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 228020786817939,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 371349063955908,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 695269748495458,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "game",
+		"version": "1.0.0",
+		"author": "Muscle-SS",
+		"authorEmail": "iss.game.world@gmail.com",
+		"authorWebsite": "http://codecanyon.net/user/muscle-ss",
+		"appId": "com.company.trafficcommand",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": true,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "any",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "none",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "file",
+		"exportFileStructure": "flat",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 1920,
+	"viewportHeight": 1080,
+	"firstLayout": "Loading"
+}

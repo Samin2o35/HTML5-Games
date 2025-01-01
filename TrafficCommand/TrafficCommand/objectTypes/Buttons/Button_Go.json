@@ -1,0 +1,53 @@
+{
+	"name": "Button_Go",
+	"plugin-id": "Sprite",
+	"sid": 9357837109512598,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Будущие_игры\\052_FruitSlasher\\Textures\\Buttons\\BtnGoOff.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4515800,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Будущие_игры\\052_FruitSlasher\\Textures\\Buttons\\BtnGoOn.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2010820,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 7129316613789251,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

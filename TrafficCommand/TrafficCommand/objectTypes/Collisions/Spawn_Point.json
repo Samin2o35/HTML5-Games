@@ -1,0 +1,75 @@
+{
+	"name": "Spawn_Point",
+	"plugin-id": "Sprite",
+	"sid": 302206177849028,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Road",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 598741911999522
+		},
+		{
+			"name": "Rotation",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 383981136830822
+		},
+		{
+			"name": "Animation",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 176338013902010
+		},
+		{
+			"name": "Vehicles_Mirrored",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 861459048735937
+		},
+		{
+			"name": "Move_To_Bottom",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 879099407707009
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3285079,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 374087177774683,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

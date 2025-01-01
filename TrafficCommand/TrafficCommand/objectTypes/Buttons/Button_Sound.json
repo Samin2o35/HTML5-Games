@@ -1,0 +1,53 @@
+{
+	"name": "Button_Sound",
+	"plugin-id": "Sprite",
+	"sid": 236444748083455,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Графические комплекты\\Игровой дизайн-24!!!\\ai\\BtnSoundOff.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2913511,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Будущие_игры\\052_FruitSlasher\\Textures\\Buttons\\BtnSoundOn.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8724206,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 2298555843452549,
+				"name": "Sound",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

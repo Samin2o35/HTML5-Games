@@ -1,0 +1,148 @@
+{
+	"name": "Game_Complete_Event",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global_Event"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Shadow_Event"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Game_Complete_Settings",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 1070183775026327
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Game_Score_Font",
+							"sid": 5853009659682317,
+							"parameters": {
+								"text": "Score"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 946029821826274,
+							"parameters": {
+								"variable": "Level",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 680226860421298,
+							"parameters": {
+								"key": "projectname & \"Level\"",
+								"value": "Level"
+							}
+						}
+					],
+					"sid": 3651728376413449
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 3671005036698643
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Text_You_Won",
+							"sid": 927605333904650,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "ViewportTop(Self.LayerName) + (Self.Height / 2) + Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Sun_Rays",
+							"sid": 9538152171713054,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "(ViewportTop(Self.LayerName) + ViewportBottom(Self.LayerName) ) / 2 - 30"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Game_Score_Font",
+							"sid": 2936914278461807,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "(ViewportTop(Self.LayerName) + ViewportBottom(Self.LayerName) ) / 2 - 30"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Total_Score_Font",
+							"sid": 4779717460530977,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Fullscreen",
+							"sid": 608792976270984,
+							"parameters": {
+								"x": "ViewportLeft(Self.LayerName) + (Self.Width_Size / 2) + Current_Distance",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Menu",
+							"sid": 884701392690080,
+							"parameters": {
+								"x": "ViewportLeft(Self.LayerName) + (Self.Width_Size * 1.5) + (Current_Distance * 2)",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Music",
+							"sid": 774483302281236,
+							"parameters": {
+								"x": "ViewportRight(Self.LayerName) - (Self.Width_Size * 1.5) - (Current_Distance * 2)",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Sound",
+							"sid": 234150344810943,
+							"parameters": {
+								"x": "ViewportRight(Self.LayerName) - (Self.Width_Size / 2) - Current_Distance",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						}
+					],
+					"sid": 5984994842060058
+				}
+			],
+			"sid": 9293649698430176
+		}
+	],
+	"sid": 981981820545215
+}

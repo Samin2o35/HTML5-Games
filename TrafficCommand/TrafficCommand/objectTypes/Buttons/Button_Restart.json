@@ -1,0 +1,53 @@
+{
+	"name": "Button_Restart",
+	"plugin-id": "Sprite",
+	"sid": 5054392289176291,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 132,
+						"height": 143,
+						"originX": 0.5,
+						"originY": 0.503497,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Будущие_игры\\052_FruitSlasher\\Textures\\Buttons\\BtnRestarOff.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 825013,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 132,
+						"height": 143,
+						"originX": 0.5,
+						"originY": 0.503497,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Будущие_игры\\052_FruitSlasher\\Textures\\Buttons\\BtnRestarOn.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8276742,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 2141874655091135,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

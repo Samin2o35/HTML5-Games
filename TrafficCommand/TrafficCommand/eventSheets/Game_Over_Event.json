@@ -1,0 +1,238 @@
+{
+	"name": "Game_Over_Event",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global_Event"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Shadow_Event"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Game_Over_Settings",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 262085873925258
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Game_Score_Font",
+							"sid": 912014740922684,
+							"parameters": {
+								"text": "Score"
+							}
+						}
+					],
+					"sid": 230359399320838
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 865197631204426
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Text_Try_Again",
+							"sid": 729895961865034,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "ViewportTop(Self.LayerName) + (Self.Height / 2) + Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Sun_Rays",
+							"sid": 829851005070118,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "(ViewportTop(Self.LayerName) + ViewportBottom(Self.LayerName) ) / 2 - 30"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Game_Score_Font",
+							"sid": 486917516281236,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "(ViewportTop(Self.LayerName) + ViewportBottom(Self.LayerName) ) / 2 - 30"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Restart",
+							"sid": 318209799345377,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "(ViewportTop(Self.LayerName) + ViewportBottom(Self.LayerName) ) / 2 + 220"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Total_Score_Font",
+							"sid": 595989989557244,
+							"parameters": {
+								"x": "(ViewportLeft(Self.LayerName) + ViewportRight(Self.LayerName) ) / 2",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Fullscreen",
+							"sid": 216266999133171,
+							"parameters": {
+								"x": "ViewportLeft(Self.LayerName) + (Self.Width_Size / 2) + Current_Distance",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Menu",
+							"sid": 805916801379919,
+							"parameters": {
+								"x": "ViewportLeft(Self.LayerName) + (Self.Width_Size * 1.5) + (Current_Distance * 2)",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Music",
+							"sid": 337898152131201,
+							"parameters": {
+								"x": "ViewportRight(Self.LayerName) - (Self.Width_Size * 1.5) - (Current_Distance * 2)",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Button_Sound",
+							"sid": 387894206944260,
+							"parameters": {
+								"x": "ViewportRight(Self.LayerName) - (Self.Width_Size / 2) - Current_Distance",
+								"y": "ViewportBottom(Self.LayerName) - (Self.Height_Size / 2) - Current_Distance"
+							}
+						}
+					],
+					"sid": 797132890778529
+				}
+			],
+			"sid": 681813227623996
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Button_Restart",
+			"description": "This is the button to restart the game.",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 809543732653585,
+							"parameters": {
+								"object": "Button_Restart",
+								"type": "start"
+							}
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Button_Restart",
+							"sid": 732954614322044,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						},
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 308721800373031,
+							"parameters": {
+								"group-name": "\"Shadow_In_Settings\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 106414852954542,
+							"parameters": {
+								"group-name": "\"Shadow_Out_Settings\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 780345493601325,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "Sound",
+								"stereo-pan": "0",
+								"tag-optional": "\"Sound\""
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "Button_Restart",
+							"sid": 270897772463643,
+							"parameters": {
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 496262055268054,
+							"parameters": {
+								"group-name": "\"Shadow_In_Settings\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 182505567034892,
+							"parameters": {
+								"tag": "\"Shadow_In\""
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 307936349671707,
+							"parameters": {
+								"layout": "\"Level_\" & Level"
+							}
+						}
+					],
+					"sid": 699490438353699
+				}
+			],
+			"sid": 387330735396106
+		}
+	],
+	"sid": 329369558492266
+}

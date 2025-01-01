@@ -1,0 +1,53 @@
+{
+	"name": "Button_Return",
+	"plugin-id": "Sprite",
+	"sid": 2509932120139382,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Будущие_игры\\052_FruitSlasher\\Textures\\Buttons\\BtnGoOff.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4039230,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 107,
+						"height": 116,
+						"originX": 0.504673,
+						"originY": 0.5,
+						"originalSource": "I:\\ИГРОСТРОЙ\\Будущие_игры\\052_FruitSlasher\\Textures\\Buttons\\BtnGoOn.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3105391,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 5304017814927498,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,185 @@
+{
+	"name": "Traffic_Light",
+	"plugin-id": "Sprite",
+	"sid": 474106752407194,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Working",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 897171273671407
+		},
+		{
+			"name": "Changes",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 604430552466190
+		},
+		{
+			"name": "Color",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 519376573192737
+		},
+		{
+			"name": "Collision_Width",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 721280358310343
+		},
+		{
+			"name": "Roads",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 856861447521175
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 198,
+						"height": 170,
+						"originX": 0.313131,
+						"originY": 0.811765,
+						"originalSource": "I:\\GAME DEVELOPMENT\\IN DEVELOPING\\067_TrafficMania\\Other\\Traffic_Light_Bottom.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3348061,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Red",
+								"x": 0.0353535,
+								"y": 0.311765
+							},
+							{
+								"name": "Yellow",
+								"x": 0.0353535,
+								"y": 0.370588
+							},
+							{
+								"name": "Green",
+								"x": 0.0353535,
+								"y": 0.429412
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 198,
+						"height": 168,
+						"originX": 0.0252525,
+						"originY": 1,
+						"originalSource": "I:\\GAME DEVELOPMENT\\IN DEVELOPING\\067_TrafficMania\\Other\\Traffic_Light_Top.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5872060,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Red",
+								"x": 0.308081,
+								"y": 0.125
+							},
+							{
+								"name": "Yellow",
+								"x": 0.308081,
+								"y": 0.184524
+							},
+							{
+								"name": "Green",
+								"x": 0.308081,
+								"y": 0.244048
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 190,
+						"height": 170,
+						"originX": 0.0263158,
+						"originY": 0.811765,
+						"originalSource": "I:\\GAME DEVELOPMENT\\IN DEVELOPING\\067_TrafficMania\\Other\\Traffic_Light_Right.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2160714,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Red",
+								"x": 0.310526,
+								"y": 0.311765
+							},
+							{
+								"name": "Yellow",
+								"x": 0.310526,
+								"y": 0.370588
+							},
+							{
+								"name": "Green",
+								"x": 0.310526,
+								"y": 0.429412
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 196,
+						"height": 168,
+						"originX": 0.311224,
+						"originY": 1,
+						"originalSource": "I:\\GAME DEVELOPMENT\\IN DEVELOPING\\067_TrafficMania\\Other\\Traffic_Light_Left.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9147093,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Red",
+								"x": 0.0255102,
+								"y": 0.125
+							},
+							{
+								"name": "Yellow",
+								"x": 0.0255102,
+								"y": 0.184524
+							},
+							{
+								"name": "Green",
+								"x": 0.0255102,
+								"y": 0.244048
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 573464658113976,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
